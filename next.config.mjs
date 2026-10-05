@@ -10,7 +10,10 @@ const nextConfig = {
     return [{ source: '/', destination: '/austral.html', permanent: false }]
   },
   async rewrites() {
-    return [{ source: '/home', destination: '/home.html' }]
+    return [
+      { source: '/home', destination: '/home.html' },
+      { source: '/en', destination: '/en.html' },
+    ]
   },
   async headers() {
     return [
