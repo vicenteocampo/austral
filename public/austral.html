@@ -21,9 +21,10 @@ h1{font-size:clamp(34px,7vw,84px);font-weight:700;letter-spacing:.2em;line-heigh
 .cta{display:inline-block;margin-top:clamp(6px,1vw,12px);padding:14px 34px;border-radius:999px;background:#fff;color:#000;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .15s}
 .cta:hover{background:#d9d9d9}
 .cta:focus-visible{outline:2px solid #fff;outline-offset:3px}
-.cities{font-size:clamp(12px,1.3vw,14px);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85)}
-.cities span{margin:0 .7em;opacity:.5}
-@media (max-width:480px){.cities span{display:none}.cities{display:flex;flex-direction:column;gap:6px}}
+.cities{display:flex;justify-content:center;align-items:center;font-size:clamp(12px,1.3vw,14px);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+.cities span{padding:2px clamp(12px,1.6vw,20px);white-space:nowrap}
+.cities span+span{border-left:1px solid rgba(255,255,255,.75)}
+@media (max-width:480px){.cities{font-size:11px;letter-spacing:.08em}.cities span{padding:2px 9px}}
 </style>
 </head>
 <body>
@@ -33,7 +34,7 @@ h1{font-size:clamp(34px,7vw,84px);font-weight:700;letter-spacing:.2em;line-heigh
     <h1>AUSTRAL</h1>
     <p class="tag">AI Solutions</p>
     <a class="cta" href="mailto:hola@australhq.com">Contact us</a>
-    <p class="cities">Bogotá<span>·</span>São Paulo<span>·</span>Ciudad de México</p>
+    <p class="cities"><span>Bogotá</span><span>São Paulo</span><span>Ciudad de México</span></p>
   </div>
 </main>
 </body>
