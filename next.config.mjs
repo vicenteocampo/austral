@@ -7,12 +7,14 @@ const nextConfig = {
     unoptimized: true,
   },
   async redirects() {
-    return [{ source: '/', destination: '/austral.html', permanent: false }]
+    return [
+      { source: '/', destination: '/austral.html', permanent: false },
+      { source: '/en', destination: '/', permanent: false },
+    ]
   },
   async rewrites() {
     return [
       { source: '/home', destination: '/home.html' },
-      { source: '/en', destination: '/en.html' },
     ]
   },
   async headers() {
