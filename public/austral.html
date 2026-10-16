@@ -24,7 +24,7 @@ h1{font-size:clamp(34px,7vw,84px);font-weight:700;letter-spacing:.2em;line-heigh
 .cities{display:flex;justify-content:center;align-items:center;font-size:clamp(12px,1.3vw,14px);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.8)}
 .cities span{padding:2px clamp(12px,1.6vw,20px);white-space:nowrap}
 .cities span+span{border-left:1px solid rgba(255,255,255,.75)}
-@media (max-width:480px){.cities{font-size:11px;letter-spacing:.08em}.cities span{padding:2px 9px}}
+@media (max-width:480px){.cities{font-size:11px;letter-spacing:.08em;flex-wrap:wrap;row-gap:10px}.cities span{padding:2px 9px}.cities span:nth-child(3){order:4;border-left:0}.cities span:nth-child(4){order:3;border-left:1px solid rgba(255,255,255,.75)}}
 </style>
 </head>
 <body>
@@ -34,7 +34,7 @@ h1{font-size:clamp(34px,7vw,84px);font-weight:700;letter-spacing:.2em;line-heigh
     <h1>AUSTRAL</h1>
     <p class="tag">AI Solutions</p>
     <a class="cta" href="mailto:hola@australhq.com">Contact us</a>
-    <p class="cities"><span>Bogotá</span><span>São Paulo</span><span>Ciudad de México</span></p>
+    <p class="cities"><span>Bogotá</span><span>São Paulo</span><span>Ciudad de México</span><span>Miami</span></p>
   </div>
 </main>
 </body>
